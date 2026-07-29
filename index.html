@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/rr-casa-branca-design-system-08900790-78ef-40c1-876a-13af483ab472/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/rr-casa-branca-design-system-08900790-78ef-40c1-876a-13af483ab472/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/rr-casa-branca-design-system-08900790-78ef-40c1-876a-13af483ab472/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/rr-casa-branca-design-system-08900790-78ef-40c1-876a-13af483ab472/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/rr-casa-branca-design-system-08900790-78ef-40c1-876a-13af483ab472/styles.css">
+  <script src="_ds/rr-casa-branca-design-system-08900790-78ef-40c1-876a-13af483ab472/_ds_bundle.js"></script>
+  <script src="https://unpkg.com/lucide@0.462.0"></script>
+  <style>
+    body{margin:0;background:var(--color-gray-100);}
+    .slab{font-family:var(--font-display);color:var(--text-heading);}
+    .body-txt{font-family:var(--font-body);color:var(--text-primary);}
+    .rr-badge{display:inline-block;font-family:var(--font-body);font-weight:700;font-size:20px;letter-spacing:0.03em;padding:10px 26px;border-radius:999px;white-space:nowrap;}
+  </style>
+</helmet>
+
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<section data-label="Capa" data-speaker-notes="Abertura: apresentar o seguro residencial RR Casa Branca como proteção completa com atendimento humano." style="position:relative;width:1920px;height:1080px;background:var(--color-navy-900);overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:0 160px;box-sizing:border-box;">
+  <svg style="position:absolute;right:-260px;top:-300px;width:1200px;height:1200px;opacity:0.55;" viewBox="0 0 200 200"><path d="M20,180 A160,160 0 0 1 180,20" fill="none" stroke="#2455B8" stroke-width="10" stroke-linecap="round" opacity="0.5"/><path d="M50,180 A130,130 0 0 1 180,50" fill="none" stroke="#5064B6" stroke-width="10" stroke-linecap="round" opacity="0.4"/></svg>
+  <div style="position:relative;z-index:1;">
+    <span class="rr-badge" style="background:var(--color-orange-100);color:var(--color-orange-900);">SEGURO RESIDENCIAL</span>
+    <h1 class="slab" style="font-size:118px;font-weight:800;line-height:1.03;margin:40px 0 32px;max-width:1550px;color:#fff;">Proteção completa<br>para a sua casa</h1>
+    <p class="body-txt" style="font-size:32px;line-height:1.5;max-width:1100px;color:#C7D3F0;margin:0 0 56px;">Proteção inteligente. Atendimento humano. A RR Casa Branca cuida do seu lar com a estrutura de uma grande seguradora e o cuidado de quem conhece você pelo nome.</p>
+    <div style="display:flex;align-items:center;gap:32px;">
+      <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Button" variant="primary" size="lg" hint-size="auto,64px"><span style="white-space:nowrap;">COTAR AGORA</span></x-import>
+      <span class="body-txt" style="font-size:20px;color:#8FA0D6;">RR Casa Branca Corretora de Seguros · desde 1995</span>
+    </div>
+  </div>
+</section>
+
+<section data-label="O risco" data-speaker-notes="Mostrar o custo de ficar desprotegido — dados de risco residencial no Brasil." style="width:1920px;height:1080px;background:var(--surface-page);padding:100px 160px;box-sizing:border-box;display:flex;flex-direction:column;">
+  <span class="rr-badge" style="align-self:flex-start;background:var(--color-navy-mist);color:var(--brand-primary);">O RISCO</span>
+  <h2 class="slab" style="font-size:64px;font-weight:700;margin:28px 0 20px;max-width:1500px;">Sua casa guarda mais do que patrimônio — guarda a sua história</h2>
+  <p class="body-txt" style="font-size:26px;color:var(--text-muted);max-width:1300px;margin:0 0 64px;">Incêndios, curtos-circuitos, vazamentos e furtos acontecem quando menos se espera. E a maioria dos imóveis no Brasil ainda está desprotegida.</p>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;flex:1;">
+    <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Card" padding="48" elevated="{{ true }}" hint-size="auto,320px" style="display:flex;flex-direction:column;justify-content:space-between;">
+      <div class="slab" style="font-size:84px;font-weight:800;color:var(--color-orange-500);">7 em 10</div>
+      <div class="body-txt" style="font-size:24px;line-height:1.4;color:var(--text-primary);">residências brasileiras não têm nenhum tipo de seguro contra incêndio ou roubo.</div>
+    </x-import>
+    <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Card" padding="48" elevated="{{ true }}" hint-size="auto,320px" style="display:flex;flex-direction:column;justify-content:space-between;">
+      <div class="slab" style="font-size:84px;font-weight:800;color:var(--color-orange-500);">R$ 8 mil</div>
+      <div class="body-txt" style="font-size:24px;line-height:1.4;color:var(--text-primary);">custo médio para reparar danos elétricos e hidráulicos não previstos.</div>
+    </x-import>
+    <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Card" padding="48" elevated="{{ true }}" hint-size="auto,320px" style="display:flex;flex-direction:column;justify-content:space-between;">
+      <div class="slab" style="font-size:84px;font-weight:800;color:var(--color-orange-500);">24h</div>
+      <div class="body-txt" style="font-size:24px;line-height:1.4;color:var(--text-primary);">é o tempo médio para um sinistro residencial se agravar sem assistência.</div>
+    </x-import>
+  </div>
+</section>
+
+<section data-label="Coberturas essenciais" data-speaker-notes="Apresentar as coberturas básicas do seguro residencial." style="width:1920px;height:1080px;background:var(--color-white);padding:100px 160px;box-sizing:border-box;display:flex;flex-direction:column;">
+  <span class="rr-badge" style="align-self:flex-start;background:var(--color-navy-mist);color:var(--brand-primary);">O QUE COBRE</span>
+  <h2 class="slab" style="font-size:64px;font-weight:700;margin:28px 0 64px;">Coberturas essenciais do seguro residencial</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:56px 64px;flex:1;">
+    <div style="display:flex;gap:24px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="flame" size="44" color="#F7941D" hint-size="44,44"></x-import><div><div class="slab" style="font-size:26px;font-weight:700;margin-bottom:10px;">Incêndio, raio e explosão</div><div class="body-txt" style="font-size:20px;line-height:1.5;color:var(--text-muted);">Reconstrução ou reparo total em caso de incêndio, queda de raio ou explosão.</div></div></div>
+    <div style="display:flex;gap:24px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="shield-alert" size="44" color="#F7941D" hint-size="44,44"></x-import><div><div class="slab" style="font-size:26px;font-weight:700;margin-bottom:10px;">Roubo e furto qualificado</div><div class="body-txt" style="font-size:20px;line-height:1.5;color:var(--text-muted);">Reposição de bens móveis levados em caso de roubo ou furto com arrombamento.</div></div></div>
+    <div style="display:flex;gap:24px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="zap" size="44" color="#F7941D" hint-size="44,44"></x-import><div><div class="slab" style="font-size:26px;font-weight:700;margin-bottom:10px;">Danos elétricos</div><div class="body-txt" style="font-size:20px;line-height:1.5;color:var(--text-muted);">Cobre equipamentos danificados por sobrecarga, curto-circuito ou queda de energia.</div></div></div>
+    <div style="display:flex;gap:24px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="cloud-lightning" size="44" color="#F7941D" hint-size="44,44"></x-import><div><div class="slab" style="font-size:26px;font-weight:700;margin-bottom:10px;">Vendaval e desastres naturais</div><div class="body-txt" style="font-size:20px;line-height:1.5;color:var(--text-muted);">Proteção contra vento forte, granizo, alagamento e queda de árvores.</div></div></div>
+    <div style="display:flex;gap:24px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="scale" size="44" color="#F7941D" hint-size="44,44"></x-import><div><div class="slab" style="font-size:26px;font-weight:700;margin-bottom:10px;">Responsabilidade civil</div><div class="body-txt" style="font-size:20px;line-height:1.5;color:var(--text-muted);">Cobre danos causados a terceiros dentro do imóvel, com respaldo jurídico.</div></div></div>
+    <div style="display:flex;gap:24px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="headset" size="44" color="#F7941D" hint-size="44,44"></x-import><div><div class="slab" style="font-size:26px;font-weight:700;margin-bottom:10px;">Assistência residencial 24h</div><div class="body-txt" style="font-size:20px;line-height:1.5;color:var(--text-muted);">Chaveiro, encanador, eletricista e vidraceiro disponíveis a qualquer hora.</div></div></div>
+  </div>
+</section>
+
+<section data-label="Coberturas adicionais" data-speaker-notes="Coberturas opcionais para personalizar o plano." style="width:1920px;height:1080px;background:var(--surface-soft);padding:100px 160px;box-sizing:border-box;display:flex;flex-direction:column;">
+  <span class="rr-badge" style="align-self:flex-start;background:var(--color-navy-mist);color:var(--brand-primary);">PERSONALIZE</span>
+  <h2 class="slab" style="font-size:64px;font-weight:700;margin:28px 0 20px;max-width:1500px;">Coberturas adicionais, sob medida para o seu imóvel</h2>
+  <p class="body-txt" style="font-size:26px;color:var(--text-muted);max-width:1300px;margin:0 0 64px;">Cada casa tem necessidades diferentes. Por isso ampliamos a proteção conforme o seu perfil.</p>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;flex:1;">
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="laptop" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Equipamentos eletrônicos</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="bike" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Bicicletas e itens de lazer</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="waves" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Piscina e área de lazer</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="key" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Perda de aluguel</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="wallet" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Reembolso de despesas extras</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="sun" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Painéis solares</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="paw-print" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Animais de estimação</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;border:1px solid var(--border-default);border-radius:16px;padding:36px 20px;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="panels-top-left" size="40" color="var(--brand-primary)" hint-size="40,40"></x-import><span class="slab" style="font-size:20px;font-weight:700;text-align:center;">Vidros e fachadas</span></div>
+  </div>
+</section>
+
+<section data-label="Diferenciais" data-speaker-notes="Por que escolher a RR Casa Branca em vez de contratar direto ou com outro corretor." style="width:1920px;height:1080px;background:var(--color-navy-900);padding:100px 160px;box-sizing:border-box;display:flex;flex-direction:column;">
+  <span class="rr-badge" style="align-self:flex-start;background:var(--color-orange-100);color:var(--color-orange-900);">DIFERENCIAIS</span>
+  <h2 class="slab" style="font-size:64px;font-weight:700;color:#fff;margin:28px 0 64px;max-width:1500px;">Por que segurar sua casa com a RR Casa Branca</h2>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:40px;flex:1;">
+    <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Card" padding="48" hint-size="auto,260px" style="display:flex;gap:32px;align-items:flex-start;">
+      <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="users" size="44" color="#F7941D" hint-size="44,44"></x-import>
+      <div><div class="slab" style="font-size:30px;font-weight:700;margin-bottom:14px;">Atendimento humano e próximo</div><div class="body-txt" style="font-size:22px;line-height:1.5;color:var(--text-muted);">Você fala com quem te conhece, na cidade onde você mora, desde 1995.</div></div>
+    </x-import>
+    <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Card" padding="48" hint-size="auto,260px" style="display:flex;gap:32px;align-items:flex-start;">
+      <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="search-check" size="44" color="#F7941D" hint-size="44,44"></x-import>
+      <div><div class="slab" style="font-size:30px;font-weight:700;margin-bottom:14px;">Cotação em várias seguradoras</div><div class="body-txt" style="font-size:22px;line-height:1.5;color:var(--text-muted);">Comparamos as melhores condições do mercado para você, sem custo adicional.</div></div>
+    </x-import>
+    <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Card" padding="48" hint-size="auto,260px" style="display:flex;gap:32px;align-items:flex-start;">
+      <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="headset" size="44" color="#F7941D" hint-size="44,44"></x-import>
+      <div><div class="slab" style="font-size:30px;font-weight:700;margin-bottom:14px;">Suporte em sinistros do início ao fim</div><div class="body-txt" style="font-size:22px;line-height:1.5;color:var(--text-muted);">Acompanhamos cada etapa do processo, sem burocracia para o segurado.</div></div>
+    </x-import>
+    <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Card" padding="48" hint-size="auto,260px" style="display:flex;gap:32px;align-items:flex-start;">
+      <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="calendar-check" size="44" color="#F7941D" hint-size="44,44"></x-import>
+      <div><div class="slab" style="font-size:30px;font-weight:700;margin-bottom:14px;">Renovação sem surpresas</div><div class="body-txt" style="font-size:22px;line-height:1.5;color:var(--text-muted);">Revisamos sua apólice todo ano para garantir a melhor condição vigente.</div></div>
+    </x-import>
+  </div>
+</section>
+
+<section data-label="Planos comparados" data-speaker-notes="Comparar os três planos, destacar o plano recomendado (Completo)." style="width:1920px;height:1080px;background:var(--surface-page);padding:90px 160px;box-sizing:border-box;display:flex;flex-direction:column;">
+  <span class="rr-badge" style="align-self:flex-start;background:var(--color-navy-mist);color:var(--brand-primary);">PLANOS</span>
+  <h2 class="slab" style="font-size:64px;font-weight:700;margin:28px 0 48px;">Escolha o plano ideal para o seu imóvel</h2>
+  <div style="flex:1;border-radius:16px;overflow:hidden;border:1px solid var(--border-default);">
+    <table style="width:100%;height:100%;border-collapse:collapse;font-family:var(--font-body);font-size:24px;">
+      <thead><tr>
+        <th style="text-align:left;padding:24px 28px;background:var(--color-navy-mist);"></th>
+        <th style="text-align:left;padding:24px 28px;background:var(--color-navy-mist);color:var(--text-heading);font-family:var(--font-display);font-weight:700;font-size:28px;">Básico</th>
+        <th style="text-align:left;padding:24px 28px;background:var(--color-navy-900);color:#fff;font-family:var(--font-display);font-weight:700;font-size:28px;">Completo</th>
+        <th style="text-align:left;padding:24px 28px;background:var(--color-navy-mist);color:var(--text-heading);font-family:var(--font-display);font-weight:700;font-size:28px;">Premium</th>
+      </tr></thead>
+      <tbody>
+        <tr style="border-top:1px solid var(--border-default);"><td style="padding:20px 28px;font-weight:600;color:var(--text-heading);">Incêndio, raio e explosão</td><td style="padding:20px 28px;">✓</td><td style="padding:20px 28px;background:var(--color-navy-mist);">✓</td><td style="padding:20px 28px;">✓</td></tr>
+        <tr style="border-top:1px solid var(--border-default);"><td style="padding:20px 28px;font-weight:600;color:var(--text-heading);">Roubo e furto qualificado</td><td style="padding:20px 28px;">até R$ 20 mil</td><td style="padding:20px 28px;background:var(--color-navy-mist);">até R$ 60 mil</td><td style="padding:20px 28px;">até R$ 150 mil</td></tr>
+        <tr style="border-top:1px solid var(--border-default);"><td style="padding:20px 28px;font-weight:600;color:var(--text-heading);">Danos elétricos</td><td style="padding:20px 28px;">—</td><td style="padding:20px 28px;background:var(--color-navy-mist);">✓</td><td style="padding:20px 28px;">✓</td></tr>
+        <tr style="border-top:1px solid var(--border-default);"><td style="padding:20px 28px;font-weight:600;color:var(--text-heading);">Responsabilidade civil</td><td style="padding:20px 28px;">—</td><td style="padding:20px 28px;background:var(--color-navy-mist);">até R$ 50 mil</td><td style="padding:20px 28px;">até R$ 150 mil</td></tr>
+        <tr style="border-top:1px solid var(--border-default);"><td style="padding:20px 28px;font-weight:600;color:var(--text-heading);">Assistência 24h</td><td style="padding:20px 28px;">básica</td><td style="padding:20px 28px;background:var(--color-navy-mist);">completa</td><td style="padding:20px 28px;">completa premium</td></tr>
+        <tr style="border-top:1px solid var(--border-default);"><td style="padding:20px 28px;font-weight:600;color:var(--text-heading);">Equipamentos eletrônicos</td><td style="padding:20px 28px;">—</td><td style="padding:20px 28px;background:var(--color-navy-mist);">—</td><td style="padding:20px 28px;">✓</td></tr>
+        <tr style="border-top:1px solid var(--border-default);"><td style="padding:20px 28px;font-weight:600;color:var(--text-heading);">Perda de aluguel</td><td style="padding:20px 28px;">—</td><td style="padding:20px 28px;background:var(--color-navy-mist);">—</td><td style="padding:20px 28px;">✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section data-label="Números RR" data-speaker-notes="Reforçar credibilidade com números da corretora." style="width:1920px;height:1080px;background:var(--color-white);padding:100px 160px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;">
+  <span class="rr-badge" style="align-self:flex-start;background:var(--color-navy-mist);color:var(--brand-primary);">NOSSA TRAJETÓRIA</span>
+  <h2 class="slab" style="font-size:64px;font-weight:700;margin:28px 0 80px;max-width:1550px;">Mais de 30 anos protegendo famílias em Casa Branca e região</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px;">
+    <div style="text-align:center;"><div class="slab" style="font-size:100px;font-weight:800;color:var(--color-navy-900);">1995</div><div class="body-txt" style="font-size:22px;color:var(--text-muted);">ano de fundação</div></div>
+    <div style="text-align:center;"><div class="slab" style="font-size:100px;font-weight:800;color:var(--color-navy-900);">+15 mil</div><div class="body-txt" style="font-size:22px;color:var(--text-muted);">famílias atendidas</div></div>
+    <div style="text-align:center;"><div class="slab" style="font-size:100px;font-weight:800;color:var(--color-navy-900);">+10</div><div class="body-txt" style="font-size:22px;color:var(--text-muted);">seguradoras parceiras</div></div>
+    <div style="text-align:center;"><div class="slab" style="font-size:100px;font-weight:800;color:var(--color-navy-900);">98%</div><div class="body-txt" style="font-size:22px;color:var(--text-muted);">de clientes satisfeitos</div></div>
+  </div>
+</section>
+
+<section data-label="Depoimentos" data-speaker-notes="Depoimentos de clientes reais do ramo residencial." style="width:1920px;height:1080px;background:var(--surface-soft);padding:100px 160px;box-sizing:border-box;display:flex;flex-direction:column;">
+  <span class="rr-badge" style="align-self:flex-start;background:var(--color-navy-mist);color:var(--brand-primary);">QUEM JÁ CONFIA</span>
+  <h2 class="slab" style="font-size:64px;font-weight:700;margin:28px 0 64px;">O que dizem nossos segurados</h2>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:48px;flex:1;">
+    <div style="background:#fff;border-radius:20px;padding:48px;box-shadow:0 8px 24px rgba(27,36,87,0.10);display:flex;flex-direction:column;justify-content:space-between;">
+      <div><div class="slab" style="color:var(--brand-cta);font-size:64px;line-height:0.5;margin-bottom:16px;">"</div><p class="body-txt" style="font-style:italic;font-size:26px;line-height:1.55;margin:0 0 28px;">Nossa corretora está preparada para cuidar de cada detalhe da proteção dos nossos segurados. Depois do vazamento na cozinha, resolveram tudo em dois dias.</p></div>
+      <div class="body-txt" style="font-size:22px;font-weight:700;color:var(--text-heading);">Mariana S. <span style="font-weight:400;color:var(--text-muted);">· Cliente desde 2019, Casa Branca-SP</span></div>
+    </div>
+    <div style="background:#fff;border-radius:20px;padding:48px;box-shadow:0 8px 24px rgba(27,36,87,0.10);display:flex;flex-direction:column;justify-content:space-between;">
+      <div><div class="slab" style="color:var(--brand-cta);font-size:64px;line-height:0.5;margin-bottom:16px;">"</div><p class="body-txt" style="font-style:italic;font-size:26px;line-height:1.55;margin:0 0 28px;">Atendimento excelente e total confiança. Me senti seguro do início ao fim, principalmente na hora do sinistro.</p></div>
+      <div class="body-txt" style="font-size:22px;font-weight:700;color:var(--text-heading);">Roberto A. <span style="font-weight:400;color:var(--text-muted);">· Cliente desde 2021, Vargem Grande do Sul-SP</span></div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Fale com nosso time" data-speaker-notes="Chamada final para ação: falar com o time via WhatsApp ou telefone." style="position:relative;width:1920px;height:1080px;background:var(--color-navy-900);overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-sizing:border-box;padding:0 160px;">
+  <svg style="position:absolute;left:-280px;bottom:-320px;width:1100px;height:1100px;opacity:0.45;" viewBox="0 0 200 200"><path d="M20,180 A160,160 0 0 1 180,20" fill="none" stroke="#2455B8" stroke-width="10" stroke-linecap="round" opacity="0.5"/></svg>
+  <div style="position:relative;z-index:1;">
+    <h2 class="slab" style="font-size:80px;font-weight:800;color:#fff;margin:0 0 32px;">Vamos proteger a sua casa agora?</h2>
+    <p class="body-txt" style="font-size:30px;color:#C7D3F0;max-width:1050px;margin:0 auto 56px;">Fale com nosso time e receba uma cotação personalizada, sem compromisso.</p>
+    <div style="display:flex;gap:32px;justify-content:center;">
+      <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Button" variant="primary" size="lg" hint-size="auto,64px"><span style="white-space:nowrap;">FALE COM NOSSO TIME</span></x-import>
+      <x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Button" variant="secondary" size="lg" hint-size="auto,64px"><span style="white-space:nowrap;">(19) 99304-0500</span></x-import>
+    </div>
+  </div>
+</section>
+
+<section data-label="Contato" data-speaker-notes="Encerramento com dados de contato completos." style="width:1920px;height:1080px;background:var(--color-white);padding:100px 160px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;">
+  <div class="slab" style="font-size:48px;font-weight:800;color:var(--color-navy-900);margin-bottom:20px;">RR Casa Branca</div>
+  <div class="body-txt" style="font-size:26px;color:var(--text-muted);margin-bottom:72px;">Corretora de Seguros</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:48px;">
+    <div style="display:flex;gap:20px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="map-pin" size="34" color="#2455B8" hint-size="34,34"></x-import><div class="body-txt" style="font-size:23px;line-height:1.5;">Rua Altino Arantes, 122<br>Centro, Casa Branca-SP<br>CEP 13700-079</div></div>
+    <div style="display:flex;gap:20px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="phone" size="34" color="#2455B8" hint-size="34,34"></x-import><div class="body-txt" style="font-size:23px;line-height:1.5;">(19) 99304-0500<br>casabranca@grupominhaterra.com.br</div></div>
+    <div style="display:flex;gap:20px;align-items:flex-start;"><x-import component-from-global-scope="RRCasaBrancaDesignSystem_089007.Icon" name="globe" size="34" color="#2455B8" hint-size="34,34"></x-import><div class="body-txt" style="font-size:23px;line-height:1.5;">www.rrcasabranca.com.br<br>@rrcasabranca</div></div>
+  </div>
+  <div style="margin-top:96px;padding-top:40px;border-top:1px solid var(--border-default);">
+    <div class="slab" style="font-size:28px;font-weight:700;color:var(--color-navy-900);">Proteção inteligente. Atendimento humano.</div>
+  </div>
+</section>
+
+</x-import>
+
+</x-dc>
+</body>
+</html>
